@@ -112,7 +112,7 @@ void quickSort(vector<int>&arr,int s, int e){
 // T:O(N^2) S:O(logN) avg. T:O(N*logN) with less worst cases
 void quickSortRand(vector<int>&arr,int s, int e){
     if(s>=e) return;
-
+    //srand(time(0));  // Seed random number generator
 
     int random=s+rand()%(e-s+1);
     swap(arr[random],arr[e]);
